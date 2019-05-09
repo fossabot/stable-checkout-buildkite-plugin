@@ -1,0 +1,3 @@
+name: Stable Checkout
+description: Checkout repositories into a stable path, without the agent name
+author: https://github.com/EmbarkStudios
