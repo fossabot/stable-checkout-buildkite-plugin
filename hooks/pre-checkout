@@ -1,10 +1,5 @@
 #!/bin/bash
 set -e -o pipefail
 
-echo "build_path = $BUILDKITE_BUILD_PATH"
-echo "org_slug = $BUILDKITE_ORGANIZATION_SLUG"
-echo "pipeline_slug = $BUILDKITE_PIPELINE_SLUG"
-
+# Normally this is build_path/agent_name/org_slug/pipeline_slug
 export BUILDKITE_BUILD_CHECKOUT_PATH="$BUILDKITE_BUILD_PATH/$BUILDKITE_ORGANIZATION_SLUG/$BUILDKITE_PIPELINE_SLUG"
-
-echo "checkout_path = $BUILDKITE_BUILD_CHECKOUT_PATH"
